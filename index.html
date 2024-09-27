@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>임지영! 생일 축하한다!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Hi+Melody&display=swap');
+
+        * {
+            font-family: 'Gamja Flower', sans-serif;
+        }
+
+        body {
+            background-image: url('https://lwi.nexon.com/maplestory/2024/0418_board/90318FDB5E40BB40_1.jpg');
+            background-color: white;
+            color: black;
+        }
+
+        .mycomment {
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 0px;
+        }
+
+        #imujiyon {
+            display: flex;
+            justify-content: center
+        }
+
+        .input_game_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00704a;
+            color: white;
+            height: 100px;
+            width: 1050px;
+            margin: 0 auto;
+            /* 수평 중앙 정렬 */
+            margin-top: 60px;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            gap: 5px;
+        }
+
+        .big-title {
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            font-family: 'Gamja Flower', sans-serif;
+            font-weight: 700 !important;
+
+        }
+
+        #present {
+            font-size: 20px;
+            font-family: 'Gamja Flower', sans-serif;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 700px;
+            margin: 20px 20px 20px 20px;
+            padding: 10px;
+            background-color: #00704a;
+            color: white;
+        }
+
+        .message2 {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 900px;
+            margin: 20px 20px 20px 20px;
+            padding: 10px;
+            background-color: #00704a;
+            color: white;
+        }
+
+        #add-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 800px;
+            height: 600px;
+        }
+
+        .post {
+            width: 500px;
+            margin: 20px 20px 20px 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px transparent;
+            background-color: wheat;
+        }
+
+        .button2 {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+        }
+
+        .button2>button {
+            margin-right: 10px;
+        }
+
+        .comment {
+            color: black;
+        }
+
+        #input-card {
+            width: 700px;
+
+            background-color: #f9f9f9;
+            border: solid 2px black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button2 {
+            text-align: right;
+        }
+
+        .button2 button {
+            background-color: #00704a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button2 button:hover {
+            background-color: rgb(168, 161, 161);
+        }
+
+        .jumbotron-message {
+            margin-left: 150px;
+            font-size: 1500px;
+        }
+
+        .comments {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .comment_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            gap: 20px;
+        }
+
+        .comment_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 50px;
+            width: 1500px;
+            background-color: white
+        }
+
+        .card_comment {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 0px 0px 20px;
+            font-size: 30px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        .content {
+            width: 500px;
+            height: 200px;
+            background-color: #f9f9f9;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px 0px black;
+            margin-top: 20px;
+        }
+
+        .title_des {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .answer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #check {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+    </style>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+        import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+        import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyANfOa5DxeYY3wvB1gCLKPWVlqgE8pEDvg",
+            authDomain: "sparta-45b78.firebaseapp.com",
+            projectId: "sparta-45b78",
+            storageBucket: "sparta-45b78.appspot.com",
+            messagingSenderId: "1086011296968",
+            appId: "1:1086011296968:web:341a092fecd8dec42ce9fd",
+            measurementId: "G-F3QGKWWXCG"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // 생일 선물을 받는 버튼
+        $("#present").click(async function () {
+            alert("힝 속았지?")
+        })
+
+        // 데이터 추가
+        $("#addBtn").click(async function () {
+
+            try {
+                const docRef = await addDoc(collection(db, "birthday-party"), {
+
+                    name: document.getElementById('name_input').value,
+                    comment: document.getElementById('comment_input').value,
+
+                });
+
+                alert("덕담이 추가 되었습니다!");
+                window.location.reload();
+            } catch (e) {
+                console.error("Error adding document: ", e);
+            }
+
+        });
+
+        // 데이터 읽기 및 덕담 생성. 
+        $(".row-cols-3").empty();
+        const querySnapshot = await getDocs(collection(db, "birthday-party"));
+
+        querySnapshot.forEach((doc) => {
+
+            let name = doc.data().name;
+            let comment = doc.data().comment;
+            let tempHtml = `<div class ="comment_wrapper"><p class="card_comment">${name} : ${comment}<p></div>`
+
+            $("#comment_container").append(tempHtml);
+        });
+
+        
+        // 여기서부터 스벅 메뉴 맞추기의 코드가 시작됩니다. 
+        const menu = [
+            { name: '아메리카노', price: 4500 },
+            { name: '카페라떼', price: 5000 },
+            { name: '카페모카', price: 5500 },
+            { name: '바닐라 크림 콜드 브루', price: 5800 },
+            { name: '블론드 바닐라 더블샷 마끼아또', price: 5900 },
+            { name: '스타벅스 돌체 라떼', price: 5900 },
+            { name: '화이트 초콜릿 모카', price: 5900 },
+            { name: '돌체 콜드 브루', price: 6000 },
+            { name: '망고 용과 레모네이드', price: 5900 },
+            { name: '제주 말차 라떼', price: 6100 },
+            { name: '얼 그레이 바닐라 티 라떼', price: 6100 },
+            { name: '자몽 허니 블랙 티', price: 5700 },
+            { name: '제주 유기농 녹차로 만든 티', price: 5300 },
+            { name: '잉글리쉬 브렉퍼스트 / 얼 그레이 티', price: 4500 },
+            { name: '유스베리 티', price: 4500 },
+            { name: '히비스커스 / 캐모마일 / 민트 블렌드 티', price: 4500 },
+            { name: '자바 칩 프라푸치노', price: 6300 },
+            { name: '카라멜 프라푸치노', price: 5900 },
+            { name: '에스프레소 프라푸치노', price: 5500 },
+            { name: '제주 말차 크림 프라푸치노', price: 6300 },
+            { name: '초콜릿 크림 칩', price: 6000 },
+            { name: '딸기 딜라이트 요거트', price: 6300 },
+            { name: '망고 패션 티', price: 5400 },
+            { name: '시그니처 초콜릿', price: 5700 },
+            { name: '클래식 블루베리 치즈 케이크', price: 7900 },
+            { name: '촉촉 초콜릿 생크림 케이크', price: 5900 },
+            { name: '부드러운 생크림 카스텔라', price: 4500 },
+            { name: '7 레이어 가나슈 케이크', price: 5700 },
+            { name: '클라우드 치즈 케이크', price: 5500 },
+            { name: '레드벨벳 크림치즈 케이크', price: 5500 },
+            { name: '마스카포네 티라미수 케이크', price: 5900 },
+        ];
+
+        let randomObject; // 빈 변수를 미리 생성. 
+
+        $("#start").click(async function () { // 게임 시작 함수. 
+            const randomindex = Math.floor(Math.random() * 31); // 랜덤한 객체 추출
+            randomObject = menu[randomindex];
+            document.getElementById('randommenu').textContent = randomObject.name;
+        })
+
+        $("#submit").click(async function () { // 제출 버튼 클릭 시, 답을 확인하는 함수
+            let kotae = document.getElementById('answer').value
+
+            if (kotae == randomObject.price) {
+                document.getElementById('check').textContent = '정답입니다.'
+            } else {
+                document.getElementById('check').textContent = '오답입니다.'
+            }
+        })
+
+        $("#reset").click(function () { // 게임 초기화 함수.
+            document.getElementById('randommenu').textContent = '랜덤한 메뉴가 표시되요!';
+            document.getElementById('check').textContent = '';
+            document.getElementById('answer').value = '';  // 입력 필드 초기화
+        });
+    </script>
+</head>
+
+<body>
+    <div class="title-container">
+        <h1 class="big-title">임지영!!!!! 생일 츄카해애애애</h1>
+        <button id="present" type="button" class="btn btn-danger">생일 선물 받기<br>(임지영만 누를 것)</button>
+    </div>
+
+    <div class="input_game_wrapper">
+        <!-- 점보 트론 적용 jumbotron -->
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div id="add-wrapper" class="container-fluid py-5">
+                <div class="message">
+                    <h1 id="imujiyon" class="display-5 fw-bold" style="font-family: 'Gamja Flower', sans-serif;">임지영에게
+                        생일 축하
+                        덕담 남기기</h1>
+                    <p class="mycomment" style="font-size: 30px;"> 9월 30일 임지영의 생일을 맞아 덕담 한 마디씩 부탁드립니다.
+                    <p>
+                    <p class="mycomment" style="font-size: 30px;"> 여러분들의 덕담, 제 데이터베이스에 저장됩니다.</p>
+                </div>
+                <!-- 부트스트랩 인풋 박스 적용-->
+                <div class="post" id="input-card">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name_input" placeholder="이름">
+                        <label>이름</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="덕담" id="comment_input"></textarea>
+                        <label>덕담</label>
+                    </div>
+                    <div class="button2">
+                        <button type="button" class="btn btn-danger" id="addBtn"> 기록하기 </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box"> 
+            <div class="message2">
+                <h1 id="imujiyon" class="display-5 fw-bold" style="font-family: 'Gamja Flower', sans-serif;">그거 알고 계셨나요??? 우리 지영이는...</h1>
+                <p class="mycomment" style="font-size: 30px;">무려 드라이브 쓰루 스타벅스점에서 아르바이트를 열심히 한 적이 있답니다. 
+                <p>
+                <p class="mycomment" style="font-size: 30px;"> 프로-바리스타 지영이랑 같이 스타벅스 메뉴 가격 맞추기 게임 어떠신가요?</p>
+            </div>
+            <div class="content">
+                <div class="title_des">
+                <h1>스타벅스 메뉴 가격 맞추기 게임</h1>
+                <h2 id="randommenu">랜덤한 메뉴가 표시되요!<br>음료는 톨 사이즈 기준</h2>
+                </div>
+                <div class="answer">
+                <input type="number" id="answer">
+                <button id="start" class="btn btn-success">시작</button>
+                <button id="submit" class="btn btn-success">제출</button>
+                <button id="reset" class="btn btn-success">다시 시작하기</button>
+                </div>
+                <p id="check"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 부트스트랩 카드 적용-->
+    <div id="comment_container" class="comment_container">
+        <div id="comments" class="comments"></div>
+    </div>
+    </div>
+</body>
+
+</html>
